@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RegisterService.Interfaces
 {
+    /// <summary>
+    /// Lifetime arayüzlerin kapsüllenmesi için kullanılmaktadır.
+    /// </summary>
     public interface IServiceLifetime
     {
     }
