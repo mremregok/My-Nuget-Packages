@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "loOrjSYY+ZUriiyvgpT1UGJ04IFoWGZlRgOM/fntfpjCji5SMGlNq95cvMNWfivZPeYDirxoV1OAOhPogstx/A==",
+  "success": true,
+  "projectFilePath": "E:\\.NET\\Nuget\\RegisterService\\RegisterService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emrec\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+E:\.NET\Nuget\RegisterService\bin\Debug\net6.0\RegisterService.deps.json
+E:\.NET\Nuget\RegisterService\bin\Debug\net6.0\RegisterService.dll
+E:\.NET\Nuget\RegisterService\bin\Debug\net6.0\RegisterService.pdb
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.csproj.AssemblyReference.cache
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.AssemblyInfoInputs.cache
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.AssemblyInfo.cs
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.csproj.CoreCompileInputs.cache
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.dll
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\refint\RegisterService.dll
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\RegisterService.pdb
+E:\.NET\Nuget\RegisterService\obj\Debug\net6.0\ref\RegisterService.dll
