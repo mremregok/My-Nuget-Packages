@@ -8,7 +8,7 @@ namespace RegisterService.Interfaces
 {
     /// <summary>
     /// Bu interface'i kalıtarak, 'T' olarak belirtmiş olduğunuz servisin, kalıtım alan servis ile
-    /// kaydı yapılacağını belirtmiş olursunuz.
+    /// 'scoped lifetime' olarak kaydı yapılacağını belirtmiş olursunuz.
     /// </summary>
     /// <typeparam name="T">Kaydı yapılacak servisin arayüzünü içerir.</typeparam>
     public interface IScopedService<T> : IServiceLifetime where T : class { }
