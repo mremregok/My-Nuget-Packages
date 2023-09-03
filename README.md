@@ -1,4 +1,4 @@
-Nuget.org üzerinde yayınlamış olduğum açık kaynak kodlu paketlerimin Github reposudur.
+Nuget.org üzerinde yayınlamış olduğum paketlerimin Github reposudur.
 
 Paketlerimi "mremregok.*" şeklinde, nuget paketleri içerisinde arayarak bulabilirsiniz.
 
