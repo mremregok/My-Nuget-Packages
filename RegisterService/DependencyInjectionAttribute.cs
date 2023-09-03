@@ -5,7 +5,7 @@ namespace RegisterService
     /// <summary>
     /// Bu attribute'i kayıt etmek istediğiniz servise eklemelisiniz.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class DependencyInjectionAttribute : Attribute
     {
         /// <summary>
