@@ -85,7 +85,7 @@ namespace Microsoft.Extensions.DependencyInjection
             foreach (var type in types)
             {
                 var lifeTimeType = type.GetInterfaces()//Lifetime arayüzü alıyoruz.
-                    .Where(x => x.GenericTypeArguments.Any())
+                    .Where(x => x.GenericTypeArguments.Any() && serviceLifetime.IsAssignableFrom(x))
                     .FirstOrDefault();
 
                 var assignedInterface = lifeTimeType//Lifetime arayüzde Generic Argüman olarak kaydettiğimiz
@@ -93,8 +93,6 @@ namespace Microsoft.Extensions.DependencyInjection
                     .GetGenericArguments()
                     .Where (x => x.IsInterface)//Arayüz mü diye kontrol ederek sağlaması yapılıyor.
                     .FirstOrDefault();
-
-                var temp = lifeTimeType.GetType();
 
 
                 if ( assignedInterface != null )
