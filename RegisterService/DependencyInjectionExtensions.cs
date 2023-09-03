@@ -20,7 +20,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// Bu metodu, servis kaydı alanında çağırarak, servislerinizin kaydını otomatik olarak yaptırabilirsiniz.
         /// </summary>
         /// <param name="services">Proje başlatılırken almış olduğunuz 'IServiceCollection' tipindeki servisiniz.</param>
-        public static void RegisterDependencies(this IServiceCollection services)
+        public static void RegisterServices(this IServiceCollection services)
         {
             var assembly = Assembly.GetCallingAssembly(); //Metodun çağrılmış olduğu Assembly bilgisini alıyoruz.
             RegisterWithAttribute(services, assembly);
@@ -35,33 +35,35 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             var types = assembly
                 .ExportedTypes //Projede export edilmiş tipleri alıyoruz.
-                .Where(x => x.GetCustomAttributes(typeof(DIClassAttribute), true).Length > 0)
+                .Where(x => x.GetCustomAttributes(typeof(DependencyInjectionAttribute), true).Length > 0)
                 //DIClassAttribute'e sahip sınıfları alıyoruz.
                 .ToList();
 
             foreach ( var type in types )
             {
-                var attribute = type.GetCustomAttribute<DIClassAttribute>();
+                var attribute = type.GetCustomAttribute<DependencyInjectionAttribute>();
 
                 var implementedInterface = attribute.ImplementedInterface;//Bu attribute içerisinde göndermiş olduğumuz
                 //Arayüz tipini alıyoruz.
 
-                if ( implementedInterface != null )
+                if ( implementedInterface == null )
                 {
-                    switch(attribute.Scope)//Attribute içerisinde yer alan scope değerine göre Dependency Injection
-                        //Yapılacaktır.
-                    {
-                        case DependencyInjectionScope.Singleton:
-                            services.AddSingleton(implementedInterface, type);
-                            break;
-                        case DependencyInjectionScope.Scoped:
-                            services.AddScoped(implementedInterface, type);
-                            break;
-                        case DependencyInjectionScope.Transient:
-                            services.AddTransient(implementedInterface, type);
-                            break;
-                        default: break;
-                    }
+                    implementedInterface = type.GetInterface($"I{type.Name}");
+                }
+
+                switch (attribute.Scope)//Attribute içerisinde yer alan scope değerine göre Dependency Injection
+                                        //Yapılacaktır.
+                {
+                    case Lifetime.Singleton:
+                        services.AddSingleton(implementedInterface, type);
+                        break;
+                    case Lifetime.Scoped:
+                        services.AddScoped(implementedInterface, type);
+                        break;
+                    case Lifetime.Transient:
+                        services.AddTransient(implementedInterface, type);
+                        break;
+                    default: break;
                 }
 
             }

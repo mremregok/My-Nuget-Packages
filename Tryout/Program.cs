@@ -13,7 +13,7 @@ namespace Tryout
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.RegisterDependencies();
+            builder.Services.RegisterServices();
 
             var app = builder.Build();
 

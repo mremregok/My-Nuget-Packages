@@ -9,7 +9,7 @@
       "Tryout/1.0.0": {
         "dependencies": {
           "Swashbuckle.AspNetCore": "6.5.0",
-          "mremregok.RegisterService": "1.0.0",
+          "mremregok.RegisterService": "1.0.1",
           "RegisterService": "1.0.0.0"
         },
         "runtime": {
@@ -71,7 +71,7 @@
           }
         }
       },
-      "mremregok.RegisterService/1.0.0": {
+      "mremregok.RegisterService/1.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
@@ -144,7 +144,7 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
     },
-    "mremregok.RegisterService/1.0.0": {
+    "mremregok.RegisterService/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

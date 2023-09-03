@@ -9,7 +9,7 @@ namespace RegisterService.Common
     /// <summary>
     /// Inject edilecek servisin, lifetime tipinin belirtilmesinde kullanılır.
     /// </summary>
-    public enum DependencyInjectionScope
+    public enum Lifetime
     {
         Singleton,
         Transient,

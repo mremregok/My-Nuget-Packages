@@ -6,31 +6,40 @@ Tüm servislerinizi kaydetmeniz için bir yöntem içerir.
 Uygulama build edilmeden önce aşağıdaki gibi paketin içerisinde yer alan metot çağrılmalıdır.
 
 ```
-builder.Services.RegisterDependencies();
+builder.Services.RegisterServices();
 ```
 
 ## Attribute Yöntemi
 
-Servis sınıfınıza [DIClass] Attribute'ini eklemeniz yeterli olacaktır.
+Servis sınıfınıza [DependencyInjection] Attribute'ini eklemeniz yeterli olacaktır.
 
-Attribute için gerekli 2 parametre vardır: "Type" ve "DependencyInjectionScope"
+Attribute için gerekli 2 parametre vardır: "Type" ve "LifeTime"
 
-Type => Buraya hangi interface ile bu servisi kaydetmek istiyorsanız onun tipini girmelisiniz.
+Type => Buraya hangi interface ile bu servisi kaydetmek istiyorsanız onun tipini girmelisiniz. Zorunlu bir alan değildir. 
+Eğer bu alanı belirtmezseniz, Servisinizin kalıtmış olduğu ve isminin başında "I" olan ilk arayüzle beraber kaydetmeyi dener.
 
-DependencyInjectionScope => Enum. Servisin hangi lifetime(Singleton, scoped, transient) değerine sahip olacağını
+LifeTime => Enum. Servisin hangi lifetime(Singleton, scoped, transient) değerine sahip olacağını
 belirtiyorsunuz.
 
 ### Örnek kullanım:
 ```
-[DIClass(typeof(ITestService), DependencyInjectionScope.Scoped)]
+[DependencyInjection(Lifetime.Scoped)]
 public class TestService : ITestService
+{
+}
+```
+
+### Örnek Kullanım 2:
+```
+[DependencyInjection(typeof(IGenericService), Lifetime.Scoped)]
+public class BookService : IGenericService
 {
 }
 ```
 
 ### Yer alan türler
 ```
-public enum DependencyInjectionScope
+public enum Lifetime
     {
         Singleton,
         Transient,
