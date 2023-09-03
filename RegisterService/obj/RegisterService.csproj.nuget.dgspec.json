@@ -5,7 +5,7 @@
   },
   "projects": {
     "E:\\.NET\\Nuget\\RegisterService\\RegisterService.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "E:\\.NET\\Nuget\\RegisterService\\RegisterService.csproj",
         "projectName": "mremregok.RegisterService",

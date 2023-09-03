@@ -70,3 +70,10 @@ public interface IScopedService<T> : IServiceLifetime where T : class { }
 public interface ISingletonService<T> : IServiceLifetime where T : class { }
 public interface ITransientService<T> : IServiceLifetime where T : class { }
 ```
+
+
+# Changes
+
+## 1.0.3: 
+### Attribute yöntemi için, tek bir sınıf için 1 defa kullanım olacak şekilde sınırlandırıldı. Duplicate
+### edilmesi engellendi.

@@ -6,6 +6,7 @@ using Tryout.Services.Interfaces;
 namespace Tryout.Services.Implementations
 {
     [DependencyInjection(Lifetime.Scoped)]
+    [DependencyInjection(Lifetime.Scoped)]
     public class TestService : ITestService
     {
     }

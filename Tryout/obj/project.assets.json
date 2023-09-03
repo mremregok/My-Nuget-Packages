@@ -105,7 +105,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "mremregok.RegisterService/1.0.2": {
+      "mremregok.RegisterService/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -488,7 +488,7 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "mremregok.RegisterService/1.0.2": {
+    "mremregok.RegisterService/1.0.3": {
       "type": "project",
       "path": "../RegisterService/RegisterService.csproj",
       "msbuildProject": "../RegisterService/RegisterService.csproj"
@@ -497,7 +497,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Swashbuckle.AspNetCore >= 6.5.0",
-      "mremregok.RegisterService >= 1.0.2"
+      "mremregok.RegisterService >= 1.0.3"
     ]
   },
   "packageFolders": {
