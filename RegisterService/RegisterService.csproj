@@ -8,7 +8,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>mremregok.RegisterService</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Authors>mremregok</Authors>
     <Description>Servislerin otomatik olarak kaydedilmesini sağlar.</Description>
   </PropertyGroup>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>mremregok.RegisterService</id>
+    <version>1.0.2</version>
+    <authors>mremregok</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <description>Servislerin otomatik olarak kaydedilmesini sağlar.</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\.NET\Nuget\RegisterService\bin\Debug\net6.0\RegisterService.dll" target="lib\net6.0\RegisterService.dll" />
+    <file src="E:\.NET\Nuget\RegisterService\docs\README.md" target="\README.md" />
+  </files>
+</package>
