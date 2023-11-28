@@ -1,10 +1,10 @@
-Nuget.org üzerinde yayınlamış olduğum paketlerimin Github reposudur.
+"The GitHub repository contains the packages I have published on Nuget.org.
 
-Paketlerimi "mremregok.*" şeklinde, nuget paketleri içerisinde arayarak bulabilirsiniz.
+You can find my packages by searching for "mremregok.*" among Nuget packages.
 
-Her paketin içerisinde "docs" klasörü bulunur ve paket açıklamaları orada yer alır.
+Each package contains a "docs" folder where the package descriptions are located.
 
-Tryout projesi ise, paketlerin deneme alanıdır. Referans olması açısından ekledim.
+The Tryout project is a testing area for the packages. I added it for reference purposes."
 
-## Mevcut paketler:
+## Avaliable packages:
 ### mremregok.RegisterService
